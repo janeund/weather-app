@@ -10,38 +10,57 @@
   <div class="app">
     <div class="container">
       <section class="info-brief">
-        <div class="info-brief__location-search"></div>
-        <div class="info-brief__image"></div>
-        <div class="info-brief__temperature"></div>
-        <div class="info-brief__date"></div>
-        <div class="info-brief__cloud"></div>
-        <div class="info-brief__rain"></div>
-        <div class="info-brief__location"></div>
+        <div class="info-brief__location-search">
+          <div class="location-search__icon">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <input class="location-search__input" type="text">
+          <div class="location-search__gps-button">
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="gps-not-fixed" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><path id="primary" d="M12,3V5m9,7H19m-7,9V19M3,12H5m7-7a7,7,0,1,0,7,7A7,7,0,0,0,12,5Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+          </div>
+        </div>
+        <div class="info-brief__image">
+          <svg width="200px" height="200px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 512m-440.32 0a440.32 440.32 0 1 0 880.64 0 440.32 440.32 0 1 0-880.64 0Z" fill="#FA870B" /></svg>
+        </div>
+        <div class="info-brief__temperature">12 C</div>
+        <div class="info-brief__date">Monday, 16:00</div>
+        <div class="info-brief__cloud">Mostly Cloudy</div>
+        <div class="info-brief__rain">Rain - 30%</div>
+        <div class="info-brief__location">
+          <p class="location__text">New York, NY, USA</p>
+        </div>
       </section>
       <section class="info-extended">
-        <nav class="period">
-          <ul class="period__list">
-            <li class="period__item">
-              <a class="period__link" href="#"></a>
+        <nav class="forecast-period">
+          <ul class="forecast-period__list">
+            <li class="forecast-period__item day-forecast">
+              <a class="forecast-period__link" href="#"></a>
             </li>
-            <li class="period__item">
-              <a class="period__link" href="#"></a>
+            <li class="forecast-period__item week-forecast">
+              <a class="forecast-period__link" href="#"></a>
             </li>
           </ul>
         </nav>
         <div class="forecast">
           <ul class="forecast__list">
-            <li class="forecast__item day-forecast"></li>
-            <li class="forecast__item week-forecast"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
+            <li class="forecast__item"></li>
           </ul>
         </div>
         <div class="highlights">
           <ul class="highlights__list">
-            <li class="highlights__item"></li>
-            <li class="highlights__item"></li>
-            <li class="highlights__item"></li>
-            <li class="highlights__item"></li>
-            <li class="highlights__item"></li>
+            <li class="highlights__item card"></li>
+            <li class="highlights__item card"></li>
+            <li class="highlights__item card"></li>
+            <li class="highlights__item card"></li>
+            <li class="highlights__item card"></li>
           </ul>
         </div>  
       </section>
